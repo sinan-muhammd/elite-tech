@@ -108,7 +108,7 @@ const EditorialCheckout = () => {
           </div>
 
           <div className="absolute bottom-12 text-[9px] font-black uppercase tracking-[0.5em] text-black/20">
-            JOLT STORE © 2024
+            PHLOX STORE © 2024
           </div>
         </div>
       )}

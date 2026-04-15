@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from "react-router-dom";
 import promoBg from '../assets/ff.jpg';
 
-const JoltPromo = () => {
+const PhloxPromo = () => {
     const navigate = useNavigate();
 
     const handleShopNow = () => {
@@ -31,7 +31,7 @@ const JoltPromo = () => {
                     </div>
                     
                     <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-black leading-tight">
-                        Find Your Perfect Look at Jolt's Stylish Now on Tokyo
+                        Find Your Perfect Look at Phlox's Stylish Now on Tokyo
                     </h2>
                     
                     <p className="text-gray-500 text-lg max-w-lg">
@@ -62,4 +62,4 @@ const JoltPromo = () => {
     );
 };
 
-export default JoltPromo;
+export default PhloxPromo;

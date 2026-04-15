@@ -27,7 +27,7 @@ const slides = [
   },
 ];
 
-const JoltHero = () => {
+const PhloxHero = () => {
   const [current, setCurrent] = useState(0);
 
   // AUTO SLIDE
@@ -119,4 +119,4 @@ const JoltHero = () => {
   );
 };
 
-export default JoltHero;
+export default PhloxHero;

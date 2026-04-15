@@ -1,7 +1,7 @@
 import React from 'react';
 import { Send } from 'lucide-react';
 
-const JoltNewsletter = () => {
+const PhloxNewsletter = () => {
     return (
         <section className="bg-black py-32 px-6 md:px-12 border-t border-white/5">
             <div className="max-w-[1440px] mx-auto text-center flex flex-col items-center">
@@ -46,4 +46,4 @@ Join our community to receive early access to new arrivals, exclusive flash sale
     );
 };
 
-export default JoltNewsletter;
+export default PhloxNewsletter;

@@ -30,7 +30,7 @@ const Login = () => {
         {/* HEADER */}
         <div className="mb-10 text-center md:text-left">
           <Link to="/" className="text-2xl font-black tracking-tighter inline-block mb-8">
-            JOLT<span className="text-gray-400">.</span>
+            PHLOX<span className="text-gray-400">.</span>
           </Link>
           <h1 className="text-3xl font-bold text-gray-900 tracking-tight mb-2">Welcome back</h1>
           <p className="text-gray-500 text-sm">Please enter your details to sign in.</p>

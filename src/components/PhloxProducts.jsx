@@ -4,7 +4,7 @@ import { useCart } from './CartContext';
 import { useNavigate } from 'react-router-dom';
 import { ShoppingBag, ArrowRight, Search, X } from 'lucide-react';
 
-const JoltProducts = () => {
+const PhloxProducts = () => {
     const [products, setProducts] = useState([]);
     const [filteredProducts, setFilteredProducts] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -165,4 +165,4 @@ const JoltProducts = () => {
     );
 };
 
-export default JoltProducts;
+export default PhloxProducts;

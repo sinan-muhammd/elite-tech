@@ -1,20 +1,20 @@
 import React from 'react';
-import JoltHero from '../components/JoltHero';
-import JoltProducts from '../components/JoltProducts';
-
-import JoltPromo from '../components/JoltPromo';
-import JoltCollections from '../components/JoltCollections';
-import JoltNewsletter from '../components/JoltNewsletter';
+import PhloxHero from '../components/PhloxHero';
+import PhloxProducts from '../components/PhloxProducts';
+import BentoCategories from '../components/BentoCategories';
+import PhloxPromo from '../components/PhloxPromo';
+import PhloxCollections from '../components/PhloxCollections';
+import PhloxNewsletter from '../components/PhloxNewsletter';
 
 function Homemain() {
   return (
     <div className="bg-white min-h-screen">
-      <JoltHero />
-   
-      <JoltProducts />
-      <JoltPromo />
-      <JoltCollections />
-      <JoltNewsletter />
+      <PhloxHero />
+      <BentoCategories />
+      <PhloxProducts />
+      <PhloxPromo />
+      <PhloxCollections />
+      <PhloxNewsletter />
     </div>
   );
 }

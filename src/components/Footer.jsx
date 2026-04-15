@@ -46,7 +46,7 @@ const Footer = () => {
           {/* Brand Info */}
           <div className="flex flex-col items-start gap-8">
             <Link to="/" className="text-3xl font-black tracking-tighter flex items-center gap-1">
-              JOLT<span className="text-red-600 block w-2 h-2 bg-red-600 rounded-full mt-2"></span>
+              PHLOX<span className="text-red-600 block w-2 h-2 bg-red-600 rounded-full mt-2"></span>
             </Link>
             <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs uppercase tracking-wider">
               Performance-driven sports gear designed for the modern-day athlete. Push your boundaries and achieve greatness with the Project.
@@ -85,7 +85,7 @@ const Footer = () => {
         {/* BOTTOM BAR */}
         <div className="pt-10 border-t border-gray-100 flex flex-col md:flex-row items-center justify-between gap-8">
           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
-            © {currentYear} JOLT SPORT PROJECT. ALL RIGHTS RESERVED.
+            © {currentYear} PHLOX SPORT PROJECT. ALL RIGHTS RESERVED.
           </p>
           <div className="flex items-center gap-10">
             {["Privacy Policy", "Terms of Service", "Accessibility"].map((policy) => (

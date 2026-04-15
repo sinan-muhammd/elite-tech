@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 
-const JoltCollections = () => {
+const PhloxCollections = () => {
   const navigate = useNavigate();
   const [collections, setCollections] = React.useState([]);
 
@@ -126,4 +126,4 @@ const JoltCollections = () => {
   );
 };
 
-export default JoltCollections;
+export default PhloxCollections;

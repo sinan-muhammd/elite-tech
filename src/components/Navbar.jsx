@@ -33,7 +33,7 @@ const Navbar = () => {
         {/* LOGO */}
         <div className="flex-1 flex items-center">
           <Link to="/" className={`text-2xl font-black ${textColor}`}>
-            JOLT
+            PHLOX
           </Link>
         </div>
 
