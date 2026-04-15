@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
@@ -6,29 +7,34 @@ const slides = [
     title: "FASHION COLLECTION",
     subtitle: "Discover Trendy Styles",
     button: "Shop Fashion",
+    link: "/products/fashion "
   },
  {
   image: "https://design-milk.com/images/2021/06/PENDA-Collection-Oiside-Featured-Image.jpg",
   title: "FURNITURE COLLECTION",
   subtitle: "Design Your Perfect Space",
   button: "Shop Furniture",
+  link: "/products/home&Furniture "
 },
   {
     image: "https://i.pinimg.com/1200x/e0/7f/2d/e07f2d5df03727883d854fa8846dcd89.jpg",
     title: "Laptops",
     subtitle: "Upgrade Your Tech",
     button: "Buy Now",
+    link: "/products/Electronics"
   },
   {
     image: "https://i.pinimg.com/1200x/5e/f5/f0/5ef5f027c4513cc540bda7431b5ccede.jpg",
     title: "Nike shoes",
     subtitle: "Level Up Your",
     button: "BUY NOW",
+    link: "/products/fashion "
   },
 ];
 
 const PhloxHero = () => {
   const [current, setCurrent] = useState(0);
+  const navigate = useNavigate();
 
   // AUTO SLIDE
   useEffect(() => {
@@ -87,6 +93,7 @@ const PhloxHero = () => {
 
               {/* BUTTON */}
               <button
+                onClick={() => navigate(slide.link)}
                 className={`mt-6 px-8 py-3 rounded-full border border-white text-sm md:text-base font-semibold tracking-wide 
                 hover:bg-white hover:text-black transition-all duration-300 ${
                   index === current
