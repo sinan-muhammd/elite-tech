@@ -17,7 +17,7 @@ const PhloxProducts = () => {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const response = await axios.get("http://localhost:5000/products");
+                const response = await axios.get("https://backend-elite-1.onrender.com/products");
                 const data = response.data.slice(-8);
                 setProducts(data);
                 setFilteredProducts(data);

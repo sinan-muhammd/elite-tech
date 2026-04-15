@@ -23,7 +23,7 @@ const ProductCompact = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0);
-        axios.get(`http://localhost:5000/products/${id}`)
+        axios.get(`https://backend-elite-1.onrender.com/products/${id}`)
             .then((res) => setProduct(res.data))
             .catch((err) => console.error(err))
             .finally(() => setLoading(false));

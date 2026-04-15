@@ -14,7 +14,7 @@ const AdminPanel = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/products");
+      const response = await axios.get("https://backend-elite-1.onrender.com/products");
       setProducts(response.data);
     } catch (error) {
       console.error("Error fetching products:", error);
@@ -34,7 +34,7 @@ const AdminPanel = () => {
   const handleDelete = async (id) => {
     if (window.confirm("ARE YOU SURE YOU WANT TO ELIMINATE THIS ASSET FROM THE PROJECT?")) {
       try {
-        await axios.delete(`http://localhost:5000/products/${id}`);
+        await axios.delete(`https://backend-elite-1.onrender.com/products/${id}`);
         setProducts(products.filter(p => p.id !== id));
       } catch (error) {
         console.error("Error deleting product:", error);

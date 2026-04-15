@@ -21,7 +21,7 @@ function Edit() {
   useEffect(() => {
     async function fetchProduct() {
       try {
-        const response = await axios.get(`http://localhost:5000/products/${id}`);
+        const response = await axios.get(`https://backend-elite-1.onrender.com/products/${id}`);
         setProduct(response.data);
       } catch (error) {
         console.error("Error fetching product:", error);
@@ -46,7 +46,7 @@ function Edit() {
     setSaving(true);
     setMessage("");
     try {
-      await axios.put(`http://localhost:5000/products/${id}`, product);
+      await axios.put(`https://backend-elite-1.onrender.com/products/${id}`, product);
       setMessage("ASSET MODIFICATION RESOLVED SUCCESSFULY");
       setTimeout(() => navigate("/admin"), 1500);
     } catch (error) {

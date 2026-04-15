@@ -10,7 +10,7 @@ const PhloxCollections = () => {
   React.useEffect(() => {
     const fetchTopCats = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/products");
+        const res = await axios.get("https://backend-elite-1.onrender.com/products");
 
         const cats = res.data.reduce((acc, p) => {
           const c = p.category?.trim();

@@ -26,7 +26,7 @@ const Adding = () => {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/products", {
+      await axios.post("https://backend-elite-1.onrender.com/products", {
         ...product,
         price: parseFloat(product.price),
       });
