@@ -1,5 +1,5 @@
 import React from 'react';
-import PhloxHero from '../components/PhloxHero';
+import WebsiteIntro from '../components/WebsiteIntro';
 import PhloxProducts from '../components/PhloxProducts';
 
 import PhloxPromo from '../components/PhloxPromo';
@@ -9,7 +9,7 @@ import PhloxNewsletter from '../components/PhloxNewsletter';
 function Homemain() {
   return (
     <div className="bg-white min-h-screen">
-      <PhloxHero />
+      <WebsiteIntro />
 
       <PhloxProducts />
       <PhloxPromo />

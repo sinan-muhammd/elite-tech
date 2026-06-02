@@ -3,19 +3,19 @@ import { useNavigate } from "react-router-dom";
 
 const slides = [
   {
-    image: "https://i.pinimg.com/736x/04/fe/40/04fe409f15e9d741bc017075d8e4031c.jpg",
+    image: "https://i.pinimg.com/736x/8c/70/50/8c70503114fa3e7236b85146d70b09de.jpg",
     title: "FASHION COLLECTION",
     subtitle: "Discover Trendy Styles",
     button: "Shop Fashion",
     link: "/products/fashion "
   },
- {
-  image: "https://design-milk.com/images/2021/06/PENDA-Collection-Oiside-Featured-Image.jpg",
-  title: "FURNITURE COLLECTION",
-  subtitle: "Design Your Perfect Space",
-  button: "Shop Furniture",
-  link: "/products/home&Furniture "
-},
+  {
+    image: "https://design-milk.com/images/2021/06/PENDA-Collection-Oiside-Featured-Image.jpg",
+    title: "FURNITURE COLLECTION",
+    subtitle: "Design Your Perfect Space",
+    button: "Shop Furniture",
+    link: "/products/home&Furniture "
+  },
   {
     image: "https://i.pinimg.com/1200x/e0/7f/2d/e07f2d5df03727883d854fa8846dcd89.jpg",
     title: "Laptops",
@@ -24,11 +24,11 @@ const slides = [
     link: "/products/Electronics"
   },
   {
-    image: "https://i.pinimg.com/1200x/5e/f5/f0/5ef5f027c4513cc540bda7431b5ccede.jpg",
-    title: "Nike shoes",
+    image: "https://i.pinimg.com/736x/bb/84/9e/bb849eb4de975c14ace8448af06a54f1.jpg",
+    title: "Headphones Guide ",
     subtitle: "Level Up Your",
     button: "BUY NOW",
-    link: "/products/fashion "
+    link: "/products/Electronics "
   },
 ];
 
@@ -71,22 +71,20 @@ const PhloxHero = () => {
 
               {/* TITLE */}
               <h1
-                className={`text-3xl md:text-6xl font-serif font-black tracking-tight transition-all duration-700 ${
-                  index === current
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-                }`}
+                className={`text-3xl md:text-6xl font-serif font-black tracking-tight transition-all duration-700 ${index === current
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+                  }`}
               >
                 {slide.title}
               </h1>
 
               {/* SUBTITLE */}
               <p
-                className={`mt-4 text-sm md:text-xl font-serif text-white/80 transition-all duration-700 delay-200 ${
-                  index === current
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
-                }`}
+                className={`mt-4 text-sm md:text-xl font-serif text-white/80 transition-all duration-700 delay-200 ${index === current
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
+                  }`}
               >
                 {slide.subtitle}
               </p>
@@ -95,11 +93,10 @@ const PhloxHero = () => {
               <button
                 onClick={() => navigate(slide.link)}
                 className={`mt-6 px-8 py-3 rounded-full border border-white text-sm md:text-base font-semibold tracking-wide 
-                hover:bg-white hover:text-black transition-all duration-300 ${
-                  index === current
+                hover:bg-white hover:text-black transition-all duration-300 ${index === current
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-10"
-                }`}
+                  }`}
               >
                 {slide.button}
               </button>
@@ -115,9 +112,8 @@ const PhloxHero = () => {
           <div
             key={i}
             onClick={() => setCurrent(i)}
-            className={`w-3 h-3 rounded-full cursor-pointer transition ${
-              current === i ? "bg-white scale-110" : "bg-white/10"
-            }`}
+            className={`w-3 h-3 rounded-full cursor-pointer transition ${current === i ? "bg-white scale-110" : "bg-white/10"
+              }`}
           ></div>
         ))}
       </div>
